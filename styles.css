@@ -1,1 +1,46 @@
 /*  your css code here. If applicable */
+/*  your css code here. If applicable */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.search {
+  position: relative;
+  height: 40px;
+  transition: all 0.4s ease;
+}
+
+.input {
+  height: 100%;
+  width: 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  transition: width 0.4s ease;
+  opacity: 0;
+}
+
+.btn {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  border: none;
+  background: #2196f3;
+  color: white;
+  border-radius: 20px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.search.active .input {
+  width: 200px;
+  opacity: 1;
+  margin-right: 50px;
+}
+
